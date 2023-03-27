@@ -44,3 +44,59 @@
 // myFriends.forEach((element, index, array) => {
 //     console.log(element + ' index: ' + index + " array: " + array);
 // });
+
+
+// Array.prototype.indexOf()
+// return -1 if element not found else return the index of the element
+// var myFriends = ['rocky', 'jacky', 'mackey', 'xavier'];
+// console.log(myFriends.indexOf('jacky'));
+// console.log(myFriends.indexOf('jacky', 2));
+// console.log(myFriends.indexOf('name'));
+
+
+// Array.prototype.lastIndexOf()
+// var myFriends = ['rocky', 'jacky', 'mackey', 'xavier'];
+// console.log(myFriends.lastIndexOf("xavier",1))
+// console.log(myFriends.lastIndexOf("xavier",3))
+
+
+// Array.prototype.includes()
+// var myFriends = ['rocky', 'jacky', 'mackey', 'xavier'];
+// console.log(myFriends.includes('jacky'));
+// console.log(myFriends.includes('jacky',3));
+// console.log(myFriends.includes('ja'));
+
+
+// Array.prototype.find()
+// arr.find(callback(element[, index[, array]])[, thisArg])
+
+// const prices = [200,300,350,400,450,500,600];
+
+// const findElem = prices.find((currVal) => currVal < 400)
+// console.log(findElem);
+
+// console.log(prices.find((currVal) => currVal > 1400))
+
+
+// Array.prototype.findIndex()
+// const prices = [200,300,350,400,450,500,600];
+// console.log(prices.findIndex((currVal) => currVal > 400))
+// console.log(prices.findIndex((currVal) => currVal > 1400))
+
+
+// Array.prototype.filter()
+// const prices = [200,300,350,400,450,500,600]; 
+
+// const newPriceTag = prices.filter((elem, index) => {
+//     return elem > 400
+// })
+// console.log(newPriceTag);
+
+
+// Array.prototype.sort()
+
+const months = ['March', 'Jan', 'Feb', 'April' , 'Dec', 'Nov'];
+console.log(months.sort());
+
+const array1 = [1, 30, 4, 21, 100000, 99];
+console.log(array1.sort());
