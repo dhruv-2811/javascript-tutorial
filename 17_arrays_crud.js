@@ -77,11 +77,11 @@ const months = ['Jan', 'march', 'April', 'June', 'July'];
 
 //sol4
 
-const indexOfMonth = months.indexOf('April');
-if (indexOfMonth != -1){
-    const updateMonth = months.splice(indexOfMonth,Infinity);
-    console.log(months);
-    console.log(updateMonth);
-}else{
-    console.log('No such data found');
-}
+// const indexOfMonth = months.indexOf('April');
+// if (indexOfMonth != -1){
+//     const updateMonth = months.splice(indexOfMonth,Infinity);
+//     console.log(months);
+//     console.log(updateMonth);
+// }else{
+//     console.log('No such data found');
+// }
