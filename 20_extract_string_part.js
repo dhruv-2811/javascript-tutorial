@@ -21,3 +21,21 @@
 
 // let myActualTweet = myTweet.slice(0,280);
 // console.log(myActualTweet);
+
+// The substring() method(similar to slice)
+
+// var str = "Apple, Banana, Kiwi";
+// let res = str.substring(7,-2);
+// console.log(res);
+
+
+
+// The substr() Method
+
+var str = "Apple, Banana, Kiwi";
+let res = str.substr(0,5);
+let res1 = str.substr(7,-2);
+let res2 = str.substr(-4);
+console.log(res);
+console.log(res1);
+console.log(res2);
