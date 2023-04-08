@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Javascript events</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body {
+           background: lightseagreen;
+            text-align: center;
+            color: black;
+        }
+
+        .event {
+            margin-top: 150px;
+            font-size: larger;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Different types of html events</h1>
+    <div class="event">
+        <a href="#" onclick="alert('alert is displayed')" id="firstway">
+            simple inline alert()</a>
+    </div>
+    
+    <div class="event">
+        <a href="#" onclick="oncallingFunction()" id="secondway">By calling a function</a>
+    </div>
+
+    <div class="event">
+        <a href="#" id="thirdway">Inline event</a>
+    </div>
+
+    <div class="event">
+        <a href="#" id="fourthway">Event Listeners</a>
+    </div>
+
+    </body>
+    <script>
+        // 2nd way of writing function
+        const oncallingFunction = () => {
+            alert("Most common way of using events");
+        }
+
+        // 3rd way of writing function
+        const thirdevent = document.getElementById('thirdway')
+        thirdevent.onclick = function(){
+            alert('most common way of using events again(third)')
+        }
+
+        // 4th way of writing function
+        const fourthway = document.querySelector('#fourthway');
+        fourthway.addEventListener('click', ()=>{
+            alert('Using event listener')
+        })
+    </script>
+</html>
