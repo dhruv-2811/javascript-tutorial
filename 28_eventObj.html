@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Event Object</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body {
+            background-color: aliceblue;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Event Object</h1>
+    <a href="#" id="eventobjid">Event Listeners</a>
+</body>
+<script>
+    const eventlis = document.getElementById('eventobjid');
+    const checkEvent = () =>{
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+    }
+
+    eventlis.addEventListener('click', checkEvent);
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>On Change Event</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        body {
+            text-align: center;
+            font-size: 70px;
+            margin-top: 250px;
+            background-color: antiquewhite;
+        }
+        input,select {
+            height: 35px;
+            width: 217px;
+            font-size: 25px;
+            }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="">Your Name 👉</label>
+        <input type="text" name="" id="ice">
+        <br>
+        <label>
+            Choose an ice cream flavour😍
+            <select id="iceCreams" name="iceCreams">
+                <option value="">Select One ...</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="butterscotch">Butterscotch</option>
+                <option value="vanilla">Vanilla</option>
+            </select>
+        </label>
+        <br>
+        <div id="result"></div>
+    </div>
+</body>
+<script>
+
+    // const selectElement = () => {
+    //     const inputName = document.getElementById('ice').value;
+    //     const iceCream = document.getElementById('iceCreams').value;
+    //     const result = document.getElementById('result');
+    //     result.innerHTML = `${inputName} selected ${iceCream} flavor IceCream`;
+    // }
+
+    const iceCream = document.getElementById('iceCreams')
+    iceCream.addEventListener('change', () => {
+        const inputName = document.getElementById('ice').value;
+        const result = document.getElementById('result');
+        result.innerHTML = `${inputName} selected ${iceCream.value} flavor IceCream`;
+
+        if( (inputName == 'Dhruv') & (iceCream.value == 'chocolate')){
+            result.innerHTML = 'Favourite🤎'
+        } 
+    })
+
+</script>
+</html>
