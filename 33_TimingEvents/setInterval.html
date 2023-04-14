@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Set interval</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div>
+        <p>set time interval example</p>
+
+        <br>
+        <button id="btn">Click here</button>
+        </div>
+</body>
+<script>
+    const myNum = document.querySelector('p')
+    const btn = document.querySelector('#btn')
+    let num = 0
+
+    const showNum = () => {
+        myNum.innerHTML = 'Loading...'
+        setInterval(() => {
+            myNum.innerHTML = `${num}`;
+            num++;
+        }, 1000)
+    }
+    btn.addEventListener('click',showNum)
+</script>
+</html>
