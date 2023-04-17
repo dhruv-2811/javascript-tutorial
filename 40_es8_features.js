@@ -7,15 +7,17 @@
 
 
 //object.values()
-// const person = {name: 'Dhruv', age: '22'};
+const person = {name: 'Dhruv', age: '22'};
 // console.log(Object.values(person));
-// console.log(Object.entries(person));
+const arrObj = Object.entries(person)
+console.log(Object.fromEntries(arrObj));
+
 
 
 // ES2018
-const person = {name: 'Dhruv', age: '22'};
+// const person = {name: 'Dhruv', age: '22'};
 
-const sPerson = {...person}
+// const sPerson = {...person}
 
-console.log(person);
-console.log(sPerson);
+// console.log(person);
+// console.log(sPerson);

@@ -63,7 +63,7 @@ const arr = [
     ['zone_1', 'zone_2'],
     ['zone_3', 'zone_4'],
     ['zone_5', 'zone_6'],
-    ['zone_7', 'zone_8']
+    ['zone_7', ['zone_8', ['zone_9','zone_10']]]
 ];
 
 let flatArr = arr.reduce((accumulator, currVal)=>{
@@ -71,3 +71,9 @@ let flatArr = arr.reduce((accumulator, currVal)=>{
 })
 
 console.log(flatArr);
+
+
+// es2019 direct method 
+console.log(arr.flat());
+console.log(arr.flat(2));
+console.log(arr.flat(Infinity));
