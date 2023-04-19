@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Event Propagation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        #parentId{
+            background-color: aqua;
+            height: 250px;
+            width: 250px;
+        }
+        #childId{
+            background-color: darkblue;
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parentId">
+        <div id="childId">
+
+        </div>
+    </div>
+</body>
+<script>
+    const parentId = document.getElementById('parentId')
+    const childId = document.getElementById('childId')
+
+    const parentCall = () => {
+        alert('Parent Div Call');
+    }
+
+    
+    const childCall = () => {
+        alert('Child Div Call');
+        // event.stopPropagation();
+    }
+
+    parentId.addEventListener('click', parentCall, true);
+    childId.addEventListener('click', childCall, true);
+</script>
+</html>
