@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background-color: rgb(226, 221, 221);
+}
+
+.heading {
+    background-color: goldenrod;
+    padding: 10px 50px;
+    margin:0px;
+}
+
+button.learn-more {
+    margin: 20px;
+    height: 27px;
+    width: 95px;
+}
+
+.note {
+    background-color: aliceblue;
+    height: 170px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.fas.fa-edit {
+    color: rgb(44, 207, 44);
+}
+
+.fas.fa-trash-alt {
+    color: red;
+}
+
+textarea {
+    background-color:aliceblue;
+    resize: none;
+    border: none;
+    outline:none;
+    margin: 15px 15px 15px 0px;
+    font-size: 15px;
+    height: 120px;
+    width: 290px;
+}
+
+.notes-container{
+    padding-left: 49px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    display: none;
+}
